@@ -1,6 +1,7 @@
 terraform {
   backend "s3" {
     # Create a bucket in AWS S3 and replace the bucket name below
+    # aws s3 mb s3://my-terraform-state-bucket-itcc-2200-winter2025-test
     bucket = "my-terraform-state-bucket-itcc-2200-winter2025-test"
     key    = "farhaz/terraform.tfstate"
     region = "us-east-1"
